@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #098274;
+}
+
+.container {
+    
+    margin: 10px auto;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    height: 90vmin;
+    width: 90vmin;
+    
+}
+
+.game {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
+    height: 50vmin;
+    width: 50vmin;
+
+}
+
+.box {
+    font-size:300%;
+    font-weight:bolder;
+    border-radius: 10px;
+    border: 1px solid red;
+    background-color: #fbc5ff;
+    text-shadow:2px 2px 2px black;
+    box-shadow:0px 0px 20px 3px black;
+    
+}
+
+.box:active {
+    background-color: rgba(93, 0, 255, 0.514)
+}
+
+.game_name {
+    
+    
+    border: 3px solid black;
+    border-radius: 30px;
+    font-weight: bolder;
+    font-size: 5vmin;
+    padding: 10px;
+    background-color: rgb(8, 255, 173)
+}
+
+.p {
+    margin-bottom: 30px;
+}
+
+.p button {
+    margin-left: 10px;
+    border: 1px solid black;
+    border-radius: 30px;
+    font-size: 5vmin;
+    padding: 5px 20px;
+    background-color: rgb(201, 8, 255)
+}
+
+.p button:active {
+    background-color: rgb(0, 170, 255);
+}
+
+.winner {
+    margin-bottom: 10px;
+    font-size: 5vmin;
+    font-weight: bolder;
+    font-style: italic;
+    background-color:#fbc5ff;
+    border-radius:10px;
+    padding:0 10px;
+}
+
+.container>button {
+    margin-top: 10px;
+    padding: 5px;
+    color: blue;
+    font-size: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+.reset:hover{
+    transform:scale(1.2);
+    background-color:red;
+}
+.box:hover{
+    background-color:rgba(0, 195, 255, 0.696);
+    
+}
+
+.container .reset{
+    font-size:5vmin;
+}
